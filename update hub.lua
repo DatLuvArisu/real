@@ -13,11 +13,11 @@ local Window = Fluent:CreateWindow({
 })
 local Tabs = {
     Main = Window:AddTab({ Title = "Main", Icon = "home" }),
-    Setting = Window:AddTab({ Title = "Setting", Icon = "settings" }),
-    Stats = Window:AddTab({ Title = "Stats", Icon = "plus-circle" }),
-    Player = Window:AddTab({ Title = "Player", Icon = "human" }),
-    Teleport = Window:AddTab({ Title = "Teleport", Icon = "island" }),
-    Fruit = Window:AddTab({ Title = "Devil Fruit", Icon = "fruit" }),
+    Setting = Window:AddTab({ Title = "Setting", Icon = "setting" }),
+    Stats = Window:AddTab({ Title = "Stats", Icon = "setting" }),
+    Player = Window:AddTab({ Title = "Player", Icon = "home" }),
+    Teleport = Window:AddTab({ Title = "Teleport", Icon = "setting" }),
+    Fruit = Window:AddTab({ Title = "Devil Fruit", Icon = "" }),
     Raid = Window:AddTab({ Title = "Dungeon", Icon = "swords" }),
     Race = Window:AddTab({ Title = "Race V4", Icon = "chevrons-right" }),
     Shop = Window:AddTab({ Title = "Shop", Icon = "shopping-cart" }),
@@ -2312,12 +2312,12 @@ ImageButton.Parent = ScreenGui
 ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ImageButton.Position = UDim2.new(0.16217947, 0, 0.16217947, 0)
 ImageButton.Size = UDim2.new(0.0627121851, 0, 0.107579626, 0)
-ImageButton.Image = "rbxassetid://16123024155"
+ImageButton.Image = "https://create.roblox.com/store/asset/16123024155"
 
 UICorner.CornerRadius = UDim.new(0.1, 0)
 UICorner.Parent = ImageButton
 
-UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.32, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(0.65, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))}
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.32, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.65, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))}
 UIGradient.Parent = ImageButton
 
 UIAspectRatioConstraint.Parent = ImageButton
