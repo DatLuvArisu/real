@@ -13,15 +13,15 @@ local Window = Fluent:CreateWindow({
 })
 local Tabs = {
     Main = Window:AddTab({ Title = "Main", Icon = "home" }),
-    Setting = Window:AddTab({ Title = "Setting", Icon = "setting" }),
-    Stats = Window:AddTab({ Title = "Stats", Icon = "setting" }),
-    Player = Window:AddTab({ Title = "Player", Icon = "home" }),
-    Teleport = Window:AddTab({ Title = "Teleport", Icon = "setting" }),
+    Setting = Window:AddTab({ Title = "Setting", Icon = "" }),
+    Stats = Window:AddTab({ Title = "Stats", Icon = "" }),
+    Player = Window:AddTab({ Title = "Player", Icon = "" }),
+    Teleport = Window:AddTab({ Title = "Teleport", Icon = "" }),
     Fruit = Window:AddTab({ Title = "Devil Fruit", Icon = "" }),
-    Raid = Window:AddTab({ Title = "Dungeon", Icon = "swords" }),
-    Race = Window:AddTab({ Title = "Race V4", Icon = "chevrons-right" }),
-    Shop = Window:AddTab({ Title = "Shop", Icon = "shopping-cart" }),
-	Misc = Window:AddTab({ Title = "Misc", Icon = "list-plus" }),
+    Raid = Window:AddTab({ Title = "Dungeon", Icon = "" }),
+    Race = Window:AddTab({ Title = "Race V4", Icon = "" }),
+    Shop = Window:AddTab({ Title = "Shop", Icon = "" }),
+	Misc = Window:AddTab({ Title = "Misc", Icon = "" }),
 }
 local Options = Fluent.Options
 
@@ -2317,7 +2317,7 @@ ImageButton.Image = "https://create.roblox.com/store/asset/16123024155"
 UICorner.CornerRadius = UDim.new(0.1, 0)
 UICorner.Parent = ImageButton
 
-UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.32, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.65, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))}
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.32, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.65, Color3.fromRGB(116, 247, 252)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(116, 247, 252))}
 UIGradient.Parent = ImageButton
 
 UIAspectRatioConstraint.Parent = ImageButton
@@ -2329,7 +2329,7 @@ local function HCEGY_fake_script()
 
 	local TweenService = game:GetService("TweenService")
 	local tweeninfo = TweenInfo.new(4, Enum.EasingStyle.Linear, Enum.EasingDirection.In, -1)
-	local tween = TweenService:Create(script.Parent, tweeninfo, {Rotation = 360})
+	local tween = TweenService:Create(script.Parent, tweeninfo, {Rotation = 0})
 	tween:Play()
 end
 coroutine.wrap(HCEGY_fake_script)()
