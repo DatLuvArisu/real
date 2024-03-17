@@ -14,11 +14,11 @@ local IMAGE = 13
 local TEXTBOX = 14
 
 if not BBOT then
-	BBOT = { username = "dev" }
+	BBOT = { username = "datyeudoi" }
 end
 local menu
 
-local MenuName = isfile("luxuryhub/menuname.txt") and readfile("luxuryhub/menuname.txt") or nil
+local MenuName = isfile("datyeudoi/menuname.txt") and readfile("datyeudoi/menuname.txt") or nil
 local loadstart = tick()
 
 local customChatSpam = {}
